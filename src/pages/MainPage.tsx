@@ -1,5 +1,5 @@
-import ImageCellSection from "../component/ImageCellSection.tsx";
 import {SidebarLight} from "../layouts/SidebarLight.tsx";
+import ImageCellLayout from "../layouts/ImageCellLayout.tsx";
 
 
 const MainPage = ()=>{
@@ -7,7 +7,7 @@ const MainPage = ()=>{
         <div className={"grid grid-flow-col"}>
             <SidebarLight/>
             <div className={"col-start-5"}>
-                <ImageCellSection />
+                <ImageCellLayout />
             </div>
         </div>
     )

@@ -1,7 +1,7 @@
-import SectionTitle from "./SectionTitle.tsx";
-import Filter from "./Filter.tsx";
+import SectionTitle from "../component/SectionTitle.tsx";
+import Filter from "../component/Filter.tsx";
 import React, {useState} from "react";
-import {MasonryGridGallery} from "../layouts/MasonryGridGallery.tsx";
+import {MasonryGridGallery} from "./MasonryGridGallery.tsx";
 
 interface ImageCellSectionData {
     imagePath: string;

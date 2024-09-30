@@ -80,7 +80,7 @@ export class MasonryGridGallery extends Component<
     };
 
     render() {
-        const { columns, gridData } = this.state;
+        const { gridData } = this.state;
 
         return (
             <div className={`grid grid-cols-2 md:grid-cols-3 gap-4`}>

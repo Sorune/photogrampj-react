@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { BiPlus, BiLink } from "react-icons/bi";
-
+import {BiPlus, BiLink, BiStar, BiHeart} from "react-icons/bi";
 export function ImageCellItem({ imagePath, title, category, link }) {
     const [isLoaded, setIsLoaded] = useState(false);
 
@@ -26,20 +25,20 @@ export function ImageCellItem({ imagePath, title, category, link }) {
                     <p className="text-gray-300 italic h-[10%]">{category}</p>
                     <div className="imgcell-links flex space-x-2 mt-2 w-full h-[40%]">
                         <div className={"flex w-full justify-between m-2 items-end"}>
-                            <div className={"flex"}>
-                                <a href={imagePath}>
+                            <div className={"flex gap-2"}>
+                                <a href={imagePath} className={"hover:scale-125"}>
                                     <BiPlus size={28} className="text-white" />
                                 </a>
-                                <a href={link}>
+                                <a href={link} className={"hover:scale-125"}>
                                     <BiLink size={28} className="text-white" />
                                 </a>
                             </div>
-                            <div className={"flex"}>
-                                <a href={imagePath}>
-                                    <BiPlus size={28} className="text-white" />
+                            <div className={"flex gap-2"}>
+                                <a href={imagePath} className={"hover:scale-125"}>
+                                    <BiStar size={28}  className="text-white" />
                                 </a>
-                                <a href={link}>
-                                    <BiLink size={28} className="text-white" />
+                                <a href={link} className={"hover:scale-125"}>
+                                    <BiHeart size={28}  className="text-white" />
                                 </a>
                             </div>
                         </div>

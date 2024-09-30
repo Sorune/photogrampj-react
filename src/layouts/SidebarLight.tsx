@@ -9,7 +9,6 @@ import {
     Typography,
     AccordionBody,
     ListItemPrefix,
-    AccordionHeader,
 } from "@material-tailwind/react";
 import {
     TicketIcon,
@@ -20,7 +19,7 @@ import {
 } from '@heroicons/react/24/solid';
 import {
     ChevronDownIcon,
-    ArrowLeftStartOnRectangleIcon,
+    ArrowLeftStartOnRectangleIcon, Cog6ToothIcon, UserIcon,
 } from '@heroicons/react/24/outline';
 
 export function SidebarLight() {
@@ -120,10 +119,31 @@ export function SidebarLight() {
                     <AccordionBody className="py-1">
                         <List className="p-0">
                             <ListItem className={`px-16 ${LIST_ITEM_STYLES}`}>
+                                <ListItemPrefix>
+                                    <UserIcon
+                                        strokeWidth={2.5}
+                                        className="h-5 w-5"
+                                        />
+                                </ListItemPrefix>
                                 My Profile
                             </ListItem>
                             <ListItem className={`px-16 ${LIST_ITEM_STYLES}`}>
+                                <ListItemPrefix>
+                                    <Cog6ToothIcon
+                                        strokeWidth={2.5}
+                                        className="h-5 w-5"
+                                        />
+                                </ListItemPrefix>
                                 Settings
+                            </ListItem>
+                            <ListItem className={`px-16 ${LIST_ITEM_STYLES}`}>
+                                <ListItemPrefix>
+                                    <ArrowLeftStartOnRectangleIcon
+                                        strokeWidth={2.5}
+                                        className="h-5 w-5"
+                                    />
+                                </ListItemPrefix>
+                                Sign Out
                             </ListItem>
                         </List>
                     </AccordionBody>
@@ -137,15 +157,6 @@ export function SidebarLight() {
                         <ChatBubbleLeftEllipsisIcon className="h-5 w-5" />
                     </ListItemPrefix>
                     Help & Support
-                </ListItem>
-                <ListItem className={LIST_ITEM_STYLES}>
-                    <ListItemPrefix>
-                        <ArrowLeftStartOnRectangleIcon
-                            strokeWidth={2.5}
-                            className="h-5 w-5"
-                        />
-                    </ListItemPrefix>
-                    Sign Out
                 </ListItem>
             </List>
             <Alert

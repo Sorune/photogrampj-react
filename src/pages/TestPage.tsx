@@ -1,5 +1,5 @@
 import {SidebarLight} from "../layouts/SidebarLight.tsx";
-import ImageCellLayout from "../component/ImageCellLayout.tsx";
+import ImageCellLayout from "../layouts/ImageCellLayout.tsx";
 
 const TestPage = ()=>{
     return (

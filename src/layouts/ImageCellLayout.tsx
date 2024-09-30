@@ -1,4 +1,3 @@
-import SectionTitle from "../component/SectionTitle.tsx";
 import Filter from "../component/Filter.tsx";
 import React, {useState} from "react";
 import {MasonryGridGallery} from "../component/MasonryGridGallery.tsx";

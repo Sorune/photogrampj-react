@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { ImageCellItem } from "../component/ImageCell.tsx";
+import { ImageCellItem } from "./ImageCell.tsx";
 
 // 2차원 배열에 순차적으로 이미지를 푸시하는 함수
 const distributeToColumns = (array: any[], columns: number) => {

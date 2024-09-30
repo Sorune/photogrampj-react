@@ -1,7 +1,8 @@
 import SectionTitle from "../component/SectionTitle.tsx";
 import Filter from "../component/Filter.tsx";
 import React, {useState} from "react";
-import {MasonryGridGallery} from "./MasonryGridGallery.tsx";
+import {MasonryGridGallery} from "../component/MasonryGridGallery.tsx";
+import {UserSection} from "../component/UserSection.tsx";
 
 interface ImageCellSectionData {
     imagePath: string;
@@ -28,8 +29,8 @@ const ImageCellLayout: React.FC  = () => {
     ];
 
     return(
-        <div className={"grid gap-4 justify-items-center"}>
-            <SectionTitle title="imgcell" subtitle="Check our imgcell" />
+        <div className={"grid gap-4 justify-items-center p-4"}>
+            <UserSection />
             <Filter filters={filters} activeFilter={activeFilter} setActiveFilter={setActiveFilter}/>
             <MasonryGridGallery imageCellSectionData={imageCards} activeFilter={activeFilter}/>
         </div>

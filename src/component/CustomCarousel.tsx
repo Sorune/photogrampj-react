@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useDispatch } from 'react-redux';
 import { IconButton } from '@material-tailwind/react';
 import { ArrowLeftCircleIcon, ArrowRightCircleIcon, ArrowDownCircleIcon, ArrowUpCircleIcon} from '@heroicons/react/24/outline';
-import { setAttachments, removeFile } from '../store/slice/fileSlice.tsx';  // 파일 삭제 액션 추가
+import { setAttachments, removeFile } from '../store/fileSlice';  // 파일 삭제 액션 추가
 import { useFileUpload } from '../hooks/useFileUpload';
 
 const CustomCarousel = () => {

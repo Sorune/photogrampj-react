@@ -1,6 +1,6 @@
 
 
-const RegisterPage = () => {
+const AuthRegisterPage = () => {
     return (
         <div className="container mx-auto py-6">
             <div className="bg-white shadow-lg rounded-lg my-3">

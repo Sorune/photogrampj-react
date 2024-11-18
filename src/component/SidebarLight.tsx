@@ -2,7 +2,6 @@ import React from "react";
 import {
     List,
     Card,
-    Alert,
     Avatar,
     ListItem,
     Accordion,
@@ -21,14 +20,12 @@ import {
     ChevronDownIcon,
     ArrowLeftStartOnRectangleIcon, Cog6ToothIcon, UserIcon,
 } from '@heroicons/react/24/outline';
-import {useDispatch, useSelector} from "react-redux";
-import {RootState} from "../store/store..tsx";
-import {DELETE_MEMBER} from "../store/slice/authSlice.tsx";
+import {useSelector} from "react-redux";
+import {RootState} from "../store/store.tsx";
 import useAuth from "../hooks/useAuth.tsx";
 
 export function SidebarLight() {
     const [open, setOpen] = React.useState(0);
-    const dispatch = useDispatch();
 
     const {role} = useSelector((state: RootState) => state.member);
     const {accessToken} = useSelector((state:RootState)=> state.token);
@@ -43,7 +40,7 @@ export function SidebarLight() {
         "select-none hover:bg-gray-100 focus:bg-gray-100 active:bg-gray-100 hover:text-gray-900 focus:text-gray-900 active:text-gray-900 data-[selected=true]:text-gray-900";
 
     return (
-        <Card className="h-min w-full max-w-[20rem] mx-auto p-6 shadow-md sticky top-0">
+        <Card className="h-screen w-full max-w-[20rem] mx-auto p-6 shadow-md sticky top-0">
             <div className="mb-2 grid grid-rows-2 justify-content-center items-center">
                 <img
                     src="src/assets/Photogram_extracted_logo.svg"

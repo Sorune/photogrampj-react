@@ -4,7 +4,7 @@ import App from './App.tsx'
 import './index.css'
 import {ThemeProvider} from "@material-tailwind/react";
 import {Provider} from "react-redux";
-import {store} from "./store/store..tsx";
+import {store} from "./store/store.tsx";
 import {ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.min.css'
 

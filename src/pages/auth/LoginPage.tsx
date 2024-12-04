@@ -31,11 +31,11 @@ const LoginPage = () =>{
                                                 className="w-full bg-blue-500 text-white py-2 rounded mt-4">Login
                                         </button>
                                         <hr className="my-4"/>
-                                        <a href="index.html"
+                                        <a href="/"
                                            className="w-full bg-yellow-500 text-white py-2 rounded flex justify-center items-center mt-2">
                                             <i className="fab fa-google fa-fw"></i> Login with Kakao
                                         </a>
-                                        <a href="index.html"
+                                        <a href="/"
                                            className="w-full bg-blue-600 text-white py-2 rounded flex justify-center items-center mt-2">
                                             <i className="fab fa-facebook-f fa-fw"></i> Login with Instagram
                                         </a>

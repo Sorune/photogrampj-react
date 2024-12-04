@@ -44,7 +44,7 @@ const beforeReq = (config: InternalAxiosRequestConfig): InternalAxiosRequestConf
         });
     }
 
-    // headers가 없을 경우 초기화 (AxiosRequestHeaders 사용)
+    // headers 가 없을 경우 초기화 (AxiosRequestHeaders 사용)
     if (!config.headers) {
         config.headers = {} as AxiosRequestHeaders;
     }
